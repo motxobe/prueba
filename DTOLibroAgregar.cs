@@ -7,7 +7,8 @@ namespace MiBiblioteca.DTOs
         public string Isbn { get; set; }
         public string Titulo { get; set; }
 
-        [PaginasValidacion]
+        [PaginasValidacion] // para la validación de las áginas
+        
         public int Paginas { get; set; }
         public decimal Precio { get; set; }
         [PesoArchivoValidacion(PesoMaximoEnMegaBytes: 4)]
